@@ -652,6 +652,13 @@ figure.effect-julia:hover p {
     color: #aa95ff ;
 }
 
+.skills-items {
+    display: flex;
+    justify-content: center;
+    gap:70px
+}
+
+
 @media (max-width: 600px) {
     .intro-left h2 {
         font-size:18px;
@@ -659,7 +666,28 @@ figure.effect-julia:hover p {
     .intro-left p {
         font-size: 11px;
     }
+    .skills-items p {
+        font-size: 11px ;
+    }
+
+    .skills-items {
+        gap:20px;
+        justify-content: space-around;
+        padding-left: 10px;
+    }
 }
+
+@media (max-width:375px) {
+    .skills-items p {
+        font-size: 7px;
+    }
+
+    .intro-left {
+        padding: 30px 20px
+    }
+}
+
+
 
 
 /* Preloader 
