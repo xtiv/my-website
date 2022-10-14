@@ -513,6 +513,11 @@ figure.effect-julia:hover p {
     text-align: right;
 }
 
+.box-center {
+    display: flex;
+    justify-content: center;
+}
+
 @media (min-width: 992px)
 {
     .navbar-expand-lg .navbar-collapse {
@@ -634,6 +639,10 @@ figure.effect-julia:hover p {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+    }
+
+    .skill-box {
+        padding: 40px 100px;
     }
 }
 
