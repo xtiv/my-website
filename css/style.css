@@ -605,7 +605,7 @@ figure.effect-julia:hover p {
 
     .intro-right {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
     }
 
@@ -650,6 +650,21 @@ figure.effect-julia:hover p {
     .content-pad p {
         font-size: 12px;
     }
+    .btnModal {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 425px) {
+    .intro-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .intro-right img {
+        width: 80%;
+    }
 }
 
 .effect-julia img {
@@ -693,6 +708,10 @@ figure.effect-julia:hover p {
         justify-content: space-around;
         padding-left: 10px;
     }
+
+    .btnModal {
+        font-size: 16px;
+    }
 }
 
 @media (max-width:375px) {
@@ -705,6 +724,82 @@ figure.effect-julia:hover p {
     }
 }
 
+.poke-card {
+    padding: 30px;
+}
+.poke-img {
+    width: 250px;
+    height: 250px;
+}
+
+.btn-close {
+    width: 50px;
+    height: 50px;
+}
+
+.container-card {
+    gap: 30px;
+}
+
+.card {
+    padding: 15px;
+    position: relative;
+    z-index: 11 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-tilte {
+    text-align: center;
+    color:#222222!important
+}
+
+.card-body {
+    padding: 0!important 
+}
+
+.text-info {
+    font-weight: 700;
+}
+
+.close-btn i {
+    color:#222222;
+    font-size: 40px;
+}
+
+.close-btn {
+    top:-3px;
+    left:0px;
+}
+
+
+#random-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 11 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.bg-overlay {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.70;
+    background: #2f3238;
+    z-index: 10;
+    display:none;
+}
 
 
 
