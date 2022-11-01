@@ -589,6 +589,11 @@ figure.effect-julia:hover p {
         text-align: left;
         margin-top: 10px;
     }
+
+    .card {
+        flex-direction: column !important;
+        max-width: 320px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -633,6 +638,30 @@ figure.effect-julia:hover p {
     font-size: 15px;
 }
 
+.effect-julia img {
+    height: 280px;
+    object-fit: cover;
+}
+
+.content-pad p i {
+    margin-right: 10px;
+}
+
+.social-media a {
+    color: white;
+}
+
+.social-media a:hover {
+    color: #aa95ff ;
+}
+
+.skills-items {
+    display: flex;
+    justify-content: center;
+    gap:70px
+}
+
+
 @media (min-width: 601px){
     .about-me-r {
         display: flex;
@@ -665,32 +694,21 @@ figure.effect-julia:hover p {
     .intro-right img {
         width: 80%;
     }
+
+    .cards-title {
+        font-size: 13px;
+    }
+
+    .text-infor {
+        font-size: 13px !important;
+    }
+    .cards-body p {
+        font-size: 12px;
+    }
+    .cards-body {
+        width: 100%;
+    }
 }
-
-.effect-julia img {
-    height: 280px;
-    object-fit: cover;
-}
-
-.content-pad p i {
-    margin-right: 10px;
-}
-
-.social-media a {
-    color: white;
-}
-
-.social-media a:hover {
-    color: #aa95ff ;
-}
-
-.skills-items {
-    display: flex;
-    justify-content: center;
-    gap:70px
-}
-
-
 
 @media (max-width: 600px) {
     .intro-left h2 {
@@ -722,15 +740,12 @@ figure.effect-julia:hover p {
     .intro-left {
         padding: 30px 20px
     }
+    #random-card {
+        top: -30%!important;
+    }
 }
 
-.poke-card {
-    padding: 30px;
-}
-.poke-img {
-    width: 250px;
-    height: 250px;
-}
+/* CARDS RANDOM */
 
 .btn-close {
     width: 50px;
@@ -742,13 +757,13 @@ figure.effect-julia:hover p {
 }
 
 .card {
-    padding: 15px;
     position: relative;
     z-index: 11 !important;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+    padding: 30px;
 }
 
 .card-tilte {
@@ -760,19 +775,26 @@ figure.effect-julia:hover p {
     padding: 0!important 
 }
 
-.text-info {
+.text-infor {
     font-weight: 700;
+    font-size: 17px;
+    color: #aa95ff;
 }
 
 .close-btn i {
     color:#222222;
-    font-size: 40px;
+    font-size: 35px;
+}
+.close-btn i:hover {
+    color:#aa95ff ;
+    font-size: 35px;
 }
 
 .close-btn {
-    top:-3px;
+    top:0px;
     left:0px;
 }
+
 
 
 #random-card {
@@ -799,6 +821,36 @@ figure.effect-julia:hover p {
     background: #2f3238;
     z-index: 10;
     display:none;
+}
+
+.card {
+    flex-direction: row;
+    gap: 30px;
+    padding: 30px;
+}
+.card img {
+    width: 100%;
+    max-width: 250px;
+}
+.card hr {
+    width: 100%;
+    background-color: #222222;
+}
+
+.cards-body p {
+    color: #2f3238;
+    margin-bottom: 0.5rem;
+}
+.cards-body p i:hover {
+    color: #aa95ff;
+}
+.person-icon {
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.cards-title {
+    text-align: center;
 }
 
 

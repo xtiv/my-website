@@ -17,14 +17,18 @@ const getData = (url) => {
 const printData = (data) => {
     image = data.image
     let html = `
-        <div class="card" style="width: 16rem">
+        <div class="card" style="width: auto">
             <div class="position-absolute close-btn" id="close-btn">
                 <i class="fa-solid fa-circle-xmark"></i>
             </div>
             <img src='${image}' class="card-img-top" alt="imagen">
-            <hr/>
-            <div class="card-body">
-                <p class="card-tilte">Tu personaje random es <span class="text-info">${data.name}</span></p>
+            <div class="cards-body">
+                <p class="cards-title">Tu personaje random es <span class="text-infor">${data.name}</span></p>
+                <hr/>
+                <p><i class="fa-solid fa-person person-icon"></i> : ${data.species}</p>
+                <p><i class="fa-solid fa-earth-americas"></i> : ${data.location.name}</p>
+                <p><i class="fa-solid fa-heart-circle-exclamation"></i> : ${data.status}</p>
+                <p><i class="fa-regular fa-calendar-days"></i> : ${data.created}</p>
             </div>
         </div>
     `
