@@ -732,7 +732,7 @@ figure.effect-julia:hover p {
     }
 }
 
-@media (max-width:375px) {
+@media (max-width:395px) {
     .skills-items p {
         font-size: 7px;
     }
